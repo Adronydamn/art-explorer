@@ -1,0 +1,276 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* ------------------------------------------------------------------
+   Design tokens — "digital museum + editorial art journal"
+   Colors are defined once here and consumed through Tailwind utilities
+   (bg-paper, text-ink, border-line, …). Contrast pairs meet WCAG AA.
+   ------------------------------------------------------------------ */
+:root {
+  color-scheme: light;
+
+  /* Surfaces: warm museum paper */
+  --color-paper: #f6f1e7;
+  --color-paper-raised: #fbf8f2;
+  --color-paper-sunk: #ece4d4;
+  --color-mat: #efe8da;
+
+  /* Text: graphite and warm grey-brown */
+  --color-ink: #1f1c18;
+  --color-ink-muted: #5c5247;
+  --color-ink-subtle: #6e6357;
+
+  /* Accents: oxblood (interactive), ochre (ornament), deep green (open access) */
+  --color-accent: #8b2e24;
+  --color-accent-strong: #6f2219;
+  --color-accent-soft: #f1ddd3;
+  --color-ochre: #a8741a;
+  --color-ochre-soft: #f2e3c0;
+  --color-verdigris: #2f5d4a;
+  --color-verdigris-soft: #dde9e1;
+
+  --color-line: #ddd3c1;
+  --color-line-strong: #bdb098;
+  --color-focus: #8b2e24;
+  --color-overlay: rgb(18 15 12 / 0.94);
+  /* The image viewer is always dark, independent of the theme */
+  --color-viewer-ink: #f3ede3;
+  --color-viewer-muted: #cfc6b8;
+
+  --shadow-raise: 0 1px 2px rgb(40 30 20 / 0.06), 0 8px 24px -12px rgb(40 30 20 / 0.18);
+  --shadow-float: 0 12px 40px -12px rgb(40 30 20 / 0.28);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-paper: #151311;
+  --color-paper-raised: #1d1a17;
+  --color-paper-sunk: #0f0d0c;
+  --color-mat: #1a1714;
+
+  --color-ink: #ece5d8;
+  --color-ink-muted: #b8ad9c;
+  --color-ink-subtle: #a09482;
+
+  --color-accent: #df9f74;
+  --color-accent-strong: #ecb893;
+  --color-accent-soft: #3a2519;
+  --color-ochre: #cfa64f;
+  --color-ochre-soft: #3a2f17;
+  --color-verdigris: #8cc3a6;
+  --color-verdigris-soft: #1d3029;
+
+  --color-line: #2e2924;
+  --color-line-strong: #4a423a;
+  --color-focus: #ecb893;
+  --color-overlay: rgb(8 7 6 / 0.96);
+
+  --shadow-raise: 0 1px 2px rgb(0 0 0 / 0.4), 0 8px 24px -12px rgb(0 0 0 / 0.6);
+  --shadow-float: 0 12px 40px -12px rgb(0 0 0 / 0.7);
+}
+
+@theme inline {
+  --color-paper: var(--color-paper);
+  --color-paper-raised: var(--color-paper-raised);
+  --color-paper-sunk: var(--color-paper-sunk);
+  --color-mat: var(--color-mat);
+  --color-ink: var(--color-ink);
+  --color-ink-muted: var(--color-ink-muted);
+  --color-ink-subtle: var(--color-ink-subtle);
+  --color-accent: var(--color-accent);
+  --color-accent-strong: var(--color-accent-strong);
+  --color-accent-soft: var(--color-accent-soft);
+  --color-ochre: var(--color-ochre);
+  --color-ochre-soft: var(--color-ochre-soft);
+  --color-verdigris: var(--color-verdigris);
+  --color-verdigris-soft: var(--color-verdigris-soft);
+  --color-line: var(--color-line);
+  --color-line-strong: var(--color-line-strong);
+  --color-focus: var(--color-focus);
+  --color-overlay: var(--color-overlay);
+  --color-viewer-ink: var(--color-viewer-ink);
+  --color-viewer-muted: var(--color-viewer-muted);
+
+  --shadow-raise: var(--shadow-raise);
+  --shadow-float: var(--shadow-float);
+
+  --font-display: var(--font-cormorant), "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-golos), "Golos Text", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+@theme {
+  /* Typography scale (fluid for display sizes) */
+  --text-2xs: 0.6875rem;
+  --text-2xs--line-height: 1rem;
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 1.125rem;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.375rem;
+  --text-base: 1rem;
+  --text-base--line-height: 1.65rem;
+  --text-lg: 1.125rem;
+  --text-lg--line-height: 1.75rem;
+  --text-xl: 1.3125rem;
+  --text-xl--line-height: 1.8rem;
+  --text-2xl: clamp(1.5rem, 1.25rem + 1vw, 1.875rem);
+  --text-2xl--line-height: 1.2;
+  --text-3xl: clamp(1.875rem, 1.4rem + 2vw, 2.625rem);
+  --text-3xl--line-height: 1.1;
+  --text-4xl: clamp(2.25rem, 1.5rem + 3.2vw, 3.75rem);
+  --text-4xl--line-height: 1.04;
+  --text-5xl: clamp(2.75rem, 1.6rem + 5vw, 5.25rem);
+  --text-5xl--line-height: 0.98;
+
+  --tracking-label: 0.14em;
+
+  /* Radius: restrained, gallery-like */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+
+  /* Layout */
+  --container-prose: 68ch;
+  --container-page: 76rem;
+  --container-wide: 88rem;
+  --breakpoint-xs: 22.5rem;
+
+  /* Motion */
+  --ease-museum: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --duration-fast: 140ms;
+  --duration-base: 240ms;
+  --duration-slow: 480ms;
+
+  --animate-rise: rise var(--duration-slow) var(--ease-museum) both;
+  --animate-shimmer: shimmer 1.6s linear infinite;
+
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes shimmer {
+    from {
+      background-position: 200% 0;
+    }
+    to {
+      background-position: -200% 0;
+    }
+  }
+}
+
+/* z-index scale */
+:root {
+  --z-header: 30;
+  --z-dropdown: 40;
+  --z-toast: 60;
+  --z-dialog: 50;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+    min-height: 100dvh;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: var(--color-ochre-soft);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 3px;
+    border-radius: var(--radius-xs);
+  }
+
+  a {
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 1px;
+  }
+
+  mark {
+    background: var(--color-ochre-soft);
+    color: inherit;
+    border-radius: 1px;
+    padding: 0 0.05em;
+  }
+
+  dialog::backdrop {
+    background: var(--color-overlay);
+  }
+}
+
+@layer components {
+  /* Small-caps label used for section eyebrows and metadata terms */
+  .label {
+    @apply text-2xs font-medium tracking-[var(--tracking-label)] text-ink-subtle uppercase;
+  }
+
+  /* Sanitized museum / Wikipedia HTML */
+  .prose-museum {
+    @apply max-w-prose text-base text-ink;
+  }
+  .prose-museum p + p {
+    margin-top: 1em;
+  }
+  .prose-museum a {
+    @apply text-accent underline hover:text-accent-strong;
+  }
+  .prose-museum ul,
+  .prose-museum ol {
+    margin: 0.75em 0 0.75em 1.25em;
+  }
+  .prose-museum ul {
+    list-style: disc;
+  }
+  .prose-museum ol {
+    list-style: decimal;
+  }
+
+  .skeleton {
+    background: linear-gradient(
+      90deg,
+      var(--color-paper-sunk) 25%,
+      var(--color-mat) 37%,
+      var(--color-paper-sunk) 63%
+    );
+    background-size: 400% 100%;
+    @apply animate-shimmer rounded-xs;
+  }
+
+  /* Passe-partout mat around artworks: the page's signature framing */
+  .mat {
+    @apply bg-mat p-3 sm:p-5;
+    box-shadow: inset 0 0 0 1px var(--color-line);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .skeleton {
+    animation: none;
+  }
+}

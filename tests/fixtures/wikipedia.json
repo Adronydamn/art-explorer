@@ -1,0 +1,102 @@
+{
+  "search": {
+    "en": {
+      "impressionism": [
+        {
+          "id": 15169,
+          "key": "Impressionism",
+          "title": "Impressionism",
+          "description": "19th-century art movement"
+        },
+        {
+          "id": 2077,
+          "key": "Impressionism_in_music",
+          "title": "Impressionism in music",
+          "description": "Movement in Western classical music"
+        }
+      ],
+      "claude monet": [
+        {
+          "id": 6784,
+          "key": "Claude_Monet",
+          "title": "Claude Monet",
+          "description": "French painter (1840–1926)"
+        }
+      ],
+      "oil painting": [
+        {
+          "id": 22361,
+          "key": "Oil_painting",
+          "title": "Oil painting",
+          "description": "Process of painting with pigments bound in oil"
+        }
+      ],
+      "cubism": [
+        { "id": 7021, "key": "Cubism_(film)", "title": "Cubism (film)", "description": "2004 film" }
+      ]
+    },
+    "ru": {}
+  },
+  "summary": {
+    "en": {
+      "Impressionism": {
+        "type": "standard",
+        "title": "Impressionism",
+        "lang": "en",
+        "description": "19th-century art movement",
+        "extract": "Impressionism was a 19th-century art movement characterised by visible brush strokes, open composition, emphasis on accurate depiction of light in its changing qualities, ordinary subject matter, unusual visual angles, and inclusion of movement as a crucial element of human perception and experience.",
+        "content_urls": { "desktop": { "page": "https://en.wikipedia.org/wiki/Impressionism" } }
+      },
+      "Claude Monet": {
+        "type": "standard",
+        "title": "Claude Monet",
+        "lang": "en",
+        "description": "French painter (1840–1926)",
+        "extract": "Oscar-Claude Monet (14 November 1840 – 5 December 1926) was a French painter and founder of Impressionist painting who is seen as a key precursor to modernism, especially in his attempts to paint nature as he perceived it.",
+        "content_urls": { "desktop": { "page": "https://en.wikipedia.org/wiki/Claude_Monet" } }
+      },
+      "Oil painting": {
+        "type": "standard",
+        "title": "Oil painting",
+        "lang": "en",
+        "description": "Process of painting with pigments bound in oil",
+        "extract": "Oil painting is a painting method involving the procedure of painting with pigments combined with a drying oil as the binder.",
+        "content_urls": { "desktop": { "page": "https://en.wikipedia.org/wiki/Oil_painting" } }
+      },
+      "Cubism (film)": {
+        "type": "standard",
+        "title": "Cubism (film)",
+        "lang": "en",
+        "description": "2004 film",
+        "extract": "Cubism is a 2004 film.",
+        "content_urls": { "desktop": { "page": "https://en.wikipedia.org/wiki/Cubism_(film)" } }
+      }
+    },
+    "ru": {
+      "Импрессионизм": {
+        "type": "standard",
+        "title": "Импрессионизм",
+        "lang": "ru",
+        "description": "течение в искусстве XIX века",
+        "extract": "Импрессиони́зм — одно из крупнейших течений в искусстве последней трети XIX — начала XX века, зародившееся в живописи Франции, а затем распространившееся по всему миру и охватившее разные виды искусства.",
+        "content_urls": {
+          "desktop": {
+            "page": "https://ru.wikipedia.org/wiki/%D0%98%D0%BC%D0%BF%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B8%D0%B7%D0%BC"
+          }
+        }
+      }
+    }
+  },
+  "links": {
+    "en": {
+      "Impressionism": [
+        { "code": "ru", "name": "русский", "key": "Импрессионизм", "title": "Импрессионизм" }
+      ],
+      "Claude Monet": [
+        { "code": "de", "name": "Deutsch", "key": "Claude_Monet", "title": "Claude Monet" }
+      ],
+      "Oil painting": []
+    }
+  },
+  "unavailableTerms": ["modernism"]
+}

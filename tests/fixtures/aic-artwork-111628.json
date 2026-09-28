@@ -1,0 +1,78 @@
+{
+  "data": {
+    "id": 111628,
+    "api_link": "https://api.artic.edu/api/v1/artworks/111628",
+    "title": "Nighthawks",
+    "alt_titles": null,
+    "thumbnail": {
+      "lqip": "data:image/gif;base64,R0lGODlhCQAFAPUAABggIBwlJRwoKB0oKR0uNRwuOSAmJCooIy8qIy4uJiYrKScvLi0uKDguJTsvJS0wJyM1LzkxJjA0LSQzMC42MSs1NSg7N0MzJkA4K0A+NTFAOzJDPDFCPkFEPytEQzxNSENRSkdWSklcTk1dUVZkVVRqW3aRenmUfKufaH+bgba3h7y8iMG9hwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAJAAUAAAYqwMbFgUg8JIuKgkGxcD6kFSsA0HgIhY4KBRqFIIZDJIM5pUwl0WYiGAQBADs=",
+      "width": 10817,
+      "height": 5912,
+      "alt_text": "Scene in a diner, viewed through wrap-around glass windows, at night on an empty urban street. A light-skinned man and woman, he in a suit and she in a red dress, sit together at a triangular wood bar, eyes downcast. At left sits another man, his back to the viewer. Behind the counter is a light-skinned man in a white uniform. The interior lights cast a yellow glow that spills onto the street in pale green. Above the diner a sign reads, \"Phillies.\""
+    },
+    "main_reference_number": "1942.51",
+    "date_start": 1942,
+    "date_end": 1942,
+    "date_display": "1942",
+    "artist_display": "Edward Hopper (American, 1882–1967)",
+    "place_of_origin": "United States",
+    "description": "<p>About <em>Nighthawks</em> Edward Hopper recollected, “unconsciously, probably, I was painting the loneliness of a large city.” In an all-night diner, three customers sit at the counter opposite a server, each appear to be lost in thought and disengaged from one another. The composition is tightly organized and spare in details: there is no entrance to the establishment, no debris on the streets. Through harmonious geometric forms and the glow of the diner’s electric lighting, Hopper created a serene, beautiful, yet enigmatic scene. Although inspired by a restaurant Hopper had seen on Greenwich Avenue in New York, the painting is not a realistic transcription of an actual place. As viewers, we are left to wonder about the figures, their relationships, and this imagined world.</p>\n",
+    "short_description": "One of the best-known images of 20th-century art, Edward Hopper's <em>Nighthawks</em> depicts an all-night diner where three customers, all lost in their own thoughts, have congregated. It’s unclear how or why the anonymous and uncommunicative night owls are there. While Hopper mostly avoided commenting on his intent for the work, he did share, “unconsciously, probably, I was painting the loneliness of a large city.”",
+    "dimensions": "84.1 × 152.4 cm (33 1/8 × 60 in.)",
+    "medium_display": "Oil on canvas",
+    "inscriptions": "Signed recto, bottom-right, on wall, in green paint: \"EDWARD HOPPER\".",
+    "credit_line": "Friends of American Art Collection",
+    "publication_history": "Gail Levin, “Edward Hopper’s Nighthawks, Surrealism, and the War,” <em>Art Institute of Chicago Museum Studies</em> 22, 2 (1996), 180–95, fig. 1.\n\nJames N. Wood and Teri J. Edelstein, <em>The Art Institute of Chicago: Twentieth–Century Painting and Sculpture</em> (Art Institute of Chicago, 1996), 85 (ill.).\n\nJudith A. Barter, et al., <em>American Modernism at the Art Institute of Chicago, From World War I to 1955</em> (Art Institute of Chicago, 2009), no. 133.\n\nNina Baym et al., eds., <em>The Norton Anthology of American Literature</em>, 8th edition (W. W. Norton & Company, 2012), (ill.).\n\nArt",
+    "exhibition_history": "Art Institute of Chicago, <a href=\"https://www.artic.edu/exhibitions/7385/american-paintings-and-sculpture-53rd-annual-and-memorial-exhibition-of-paintings-and-drawings-by-grant-wood\"><em>The Fifty–third Annual Exhibition of American Paintings and Sculpture</em></a>, Oct. 29–Dec. 10, 1942, cat. 132.\n\nIndianapolis, 1943.\n\nArt Institute of Chicago, <a href=\"https://www.artic.edu/exhibitions/8824/american-paintings-and-sculpture-54th-annual\"><em>The Fifty–fourth Annual Exhibition of American Paintings and Sculpture</em></a>, Oct. 28–Dec. 12, 1943, cat. 15.\n\nNew York City, Whitney Museum of Americ",
+    "provenance_text": "The artist, New York; consigned to Frank Rehn Galleries, 1942; sold to the Art Institute of Chicago, 1942.",
+    "is_public_domain": false,
+    "copyright_notice": null,
+    "gallery_title": "Gallery 262",
+    "artwork_type_title": "Painting",
+    "department_title": "Arts of the Americas",
+    "artist_id": 34996,
+    "artist_title": "Edward Hopper",
+    "term_titles": [
+      "oil paint (paint)",
+      "modern and contemporary art",
+      "Modernism",
+      "architecture",
+      "painting (image making)",
+      "canvas",
+      "painting",
+      "people",
+      "buildings",
+      "view through windows",
+      "dining",
+      "drinking",
+      "oil painting"
+    ],
+    "style_id": "TM-5981",
+    "style_title": "Modernism",
+    "style_titles": ["Modernism"],
+    "classification_title": "modern and contemporary art",
+    "classification_titles": ["modern and contemporary art", "painting"],
+    "subject_titles": [
+      "architecture",
+      "people",
+      "buildings",
+      "view through windows",
+      "dining",
+      "drinking"
+    ],
+    "technique_titles": ["painting (image making)", "oil painting"],
+    "image_id": "831a05de-d3f6-f4fa-a460-23008dd58dda"
+  },
+  "info": {
+    "license_text": "The `description` field in this response is licensed under a Creative Commons Attribution 4.0 Generic License (CC-By) and the Terms and Conditions of artic.edu. All other data in this response is licensed under a Creative Commons Zero (CC0) 1.0 designation and the Terms and Conditions of artic.edu.",
+    "license_links": [
+      "https://creativecommons.org/publicdomain/zero/1.0/",
+      "https://www.artic.edu/terms"
+    ],
+    "version": "1.16"
+  },
+  "config": {
+    "iiif_url": "https://www.artic.edu/iiif/2",
+    "website_url": "http://www.artic.edu"
+  }
+}
